@@ -1,0 +1,15 @@
+{
+  "name": "mern_add_delete_items",
+  "version": "1.0.0",
+  "description": "server for CRUD app",
+  "main": "server.js\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexey",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.1"
+  }
+}
