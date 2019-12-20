@@ -1,3 +1,8 @@
+const express = require("express");
+const router = express.Router();
+const Item = require("../models/Item");
+const Mongoose = require("mongoose");
+
 router.put("/item/:id", (req, res, next) => {
   console.log(req.body);
   console.log(req.params.id);
