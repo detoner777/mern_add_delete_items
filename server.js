@@ -34,7 +34,7 @@ mongoose
 
 app.get("/", (req, res) => res.send("Hello World!"));
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 //create the server
 app.listen(port, () => {
