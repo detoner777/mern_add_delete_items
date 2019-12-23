@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  color: #222;
+  font-family: "Varela Round";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body * {
+  transition: box-shadow 0.400s ease-in-out, background  0.400s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0px auto;
+  background: #eee;
+  padding-bottom: 40px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  position: fixed;
+  width: 100%;
+  padding: 10px 0px;
+  z-index: 99;
+  top: 0px;
+  max-width: 1920px;
+  background: #eee;
+  -webkit-box-shadow: 0px 10px 8px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 8px -13px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 8px -13px rgba(0,0,0,0.75);
+ 
 }
