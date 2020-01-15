@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
+import Routes from "./routes";
 
 class App extends Component {
   constructor(props) {
