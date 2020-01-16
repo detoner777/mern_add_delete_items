@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import defaultImage from "../assets/defaultImage.jpg";
+import defaultImage from "../assets/images.png";
 import { Redirect } from "react-router";
 
 class AddItem extends Component {

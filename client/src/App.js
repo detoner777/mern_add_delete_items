@@ -11,25 +11,48 @@ class App extends Component {
     };
   }
 
+  componentDidMount = () => {
+    window.addEventListener("load", () => {
+      if (window.location.pathname === "/additem") {
+        this.setState({ location: window.location.pathname });
+      }
+    });
+    //listen to the changes in the router
+    this.unlistenHistory = this.props.history.listen(location => {
+      this.setState({ location: location.pathname });
+    });
+  };
+
   render() {
+    const showAddItem = this.state.location;
+    let addItem;
+    if (showAddItem !== "/additem") {
+      addItem = (
+        <li id="additem">
+          <Link to="/additem">AddItem</Link>
+        </li>
+      );
+    }
+
     return (
       <div className="App">
         <nav>
           <ul>
             <li>
-              <a to="/"> MERN </a>
+              <Link to="/"> MERN </Link>
             </li>
           </ul>
           <ul>
             <li>
-              <a to="/">Items</a>
+              <Link to="/">Items</Link>
             </li>
-            addItem
+            {addItem}
           </ul>
         </nav>
+        <Routes />
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
